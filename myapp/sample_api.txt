@@ -1,0 +1,13 @@
+Create Account: POST /accounts
+Retrieve Account: GET /accounts/{id}
+Update Account: PUT /accounts/{id}
+
+curl -AL-XTOKEN POST https://api.example.com/accounts \
+-H "Content-Type: application/json" \
+-d '{
+    "email": "newuser@example.com",
+    "account_id": "NU001",
+    "account_name": "New User Account",
+    "app_secret_token": "newuser1234x",
+    "website": "https://www.newwebsite.com/"
+}'
